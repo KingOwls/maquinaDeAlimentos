@@ -27,7 +27,7 @@ const productos = {
       let montoIngresado = 0;
   
       while (montoIngresado < precioProducto) {
-        const monedaIngresada = parseInt(prompt(`Ingrese moneda 10 = (${montoIngresado + 10}) 50 = (${montoIngresado + 50}) 100 = (${montoIngresado + 100}) Cantidad total a pagar: (${montoIngresado})`));
+        const monedaIngresada = parseInt(prompt(`Ingrese moneda 10 = (${montoIngresado + 10}) 50 = (${montoIngresado + 50}) 100 = (${montoIngresado + 100}) Cantidad total a pagar: (${precioProducto})`));
   
         if (![10, 50, 100].includes(monedaIngresada)) {
           alert("Moneda no válida. Ingrese 10, 50 o 100.");
